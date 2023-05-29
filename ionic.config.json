@@ -1,0 +1,7 @@
+{
+  "name": "module-cros",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

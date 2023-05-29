@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Модуль з Крос-Платформи
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card>
+        <ion-card-header>
+            <ion-title size="large">Завдання</ion-title>
+              <p>
+                Побудувати ієрархію класів, яка буду включати, як мінімум,
+                два інтерфейси, абстрактний клас та класи нащадки та написати крос-платформну програму для вирішення наступної задачі(використовувати фреймворк Ionic).
+                Ієрархію класів побудувати з використанням принципу High Cohesion + Low Coupling та SOLID.  
+                Предметне середовище: Аеропорт, авіабаза, ангар, авіаносец, літак, гелікоптер
+              </p>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Бази<p>
+          <ion-button (click)="Bases()">Вивести список Баз </ion-button>
+          <p *ngFor = "let b of base">{{b.info()}}</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <p>Транспорти<p>
+        <ion-button (click)="Transports()">Вивести список Літаків</ion-button>
+        <p *ngFor = "let t of transport">{{t.info()}}</p>
+      </ion-card-content>
+  </ion-card>
+</ion-content>
